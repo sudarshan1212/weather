@@ -23,7 +23,7 @@ if(response.status==404){
     document.querySelector(".wind").innerText=data.wind.speed+' Km/h'
     show([".left",".right",".temp",])
    if(data.weather[0].main=="Clouds"){
-    document.body.style.backgroundImage="url('./images/sunny.jpeg')" 
+    document.body.style.backgroundImage="url('./images/CLOUDY.jpg')" 
     weathericon.src="./images/clouds.png"
    }else if(data.weather[0].main=="Clear"){
     document.body.style.backgroundImage="url('./images/sunny.jpg')"
@@ -32,7 +32,7 @@ if(response.status==404){
     document.body.style.backgroundImage="url('./images/raining.png.jpg')"
     weathericon.src="./images/rain.png"
    }else if(data.weather[0].main=="Drizzle"){
-    document.body.style.backgroundImage="url('./images/sunny.jpg')"
+    document.body.style.backgroundImage="url('./images/raining.png.jpg')"
     weathericon.src="./images/drizzle.png"
    }else if(data.weather[0].main=="Mist"){
     document.body.style.backgroundImage="url('./images/sunny.jpg')"
